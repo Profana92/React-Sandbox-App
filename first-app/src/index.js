@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Book from "./Book";
-import Header from "./Header";
-import Footer from "./Footer";
+// import BookDescription from "./components/book/BookDescription";
+// import Header from "./components/partial/Header";
+// import Footer from "./components/partial/Footer";
+import Book from "./pages/Book";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Header />
+    {/* <Header /> */}
     <Book />
-    <Footer />
+    {/* <BookDescription /> */}
+    {/* <Footer /> */}
   </React.StrictMode>
 );
 
