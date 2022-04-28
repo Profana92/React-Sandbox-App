@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Book from "./Book";
-
+import Header from "./Header";
+import Footer from "./Footer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <Book case={"twarda"} />
+    {/* <App /> */}
+    <Header />
+    <Book />
+    <Footer />
   </React.StrictMode>
 );
 

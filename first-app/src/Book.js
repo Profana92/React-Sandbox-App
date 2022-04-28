@@ -15,7 +15,6 @@ export default class Book extends Component {
         <h1>{this.state.books.title}</h1>
         <h2>{this.state.books.author}</h2>
         <h4>{this.state.books.pages}</h4>
-        <h4>Okładka: {this.props.case}</h4>
       </div>
     );
   }
