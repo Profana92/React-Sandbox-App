@@ -28,10 +28,36 @@ export class Book extends Component {
         {this.state.books.map((book, i) => (
           <BookDescription key={i} book={book} />
         ))}
+        <button onClick={this.updateBook}>Resetuj książki</button>
+        <button onClick={this.addNewBook}>Dodaj nową książkę</button>
         <Footer />
       </div>
     );
   }
+
+  updateBook = () => {
+    console.log(this.state);
+    this.setState({
+      books: [
+        { title: "Hobbit", author: "J.R.Tolkien", pages: "455" },
+        { title: "Rok 1984", author: "G. Orwell", pages: "455" },
+        { title: "Władca Pierścieni", author: "J.R.Tolkien", pages: "669" },
+        {
+          title: "Stary człowiek i morze",
+          author: "E.Hemingway",
+          pages: "226",
+        },
+      ],
+    });
+  };
+  addNewBook = () => {
+    this.setState((prevState) => ({
+      books: [
+        ...prevState.books,
+        { title: "Hobbit", author: "J.R.Tolkien", pages: "455" },
+      ],
+    }));
+  };
 }
 
 export default Book;

@@ -7,13 +7,16 @@ import reportWebVitals from "./reportWebVitals";
 // import Header from "./components/partial/Header";
 // import Footer from "./components/partial/Footer";
 import Book from "./pages/Book";
-import PropCheck from "./components/propcheck/PropCheck";
+// import PropCheck from "./components/propcheck/PropCheck";
+import Counter from "./components/counter/Counter";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Header /> */}
     <Book />
+    <Counter />
     {/* <PropCheck age={29} /> */}
     {/* <BookDescription /> */}
     {/* <Footer /> */}
