@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import BookDescription from "./components/book/BookDescription";
-// import Header from "./components/partial/Header";
-// import Footer from "./components/partial/Footer";
+import BookDescription from "./components/book/BookDescription";
+import Header from "./components/partial/Header";
+import Footer from "./components/partial/Footer";
 import Book from "./pages/Book";
-// import PropCheck from "./components/propcheck/PropCheck";
+import PropCheck from "./components/propcheck/PropCheck";
 import Counter from "./components/counter/Counter";
 import HOC from "./components/user/User";
 import Refs from "./components/refs/Refs";
@@ -20,13 +20,13 @@ root.render(
     <First>
       <Second />
     </First>
-    {/* <App /> */}
-    {/* <Header /> */}
+    <App />
+    <Header />
     <Book />
     <Counter />
-    {/* <PropCheck age={29} /> */}
-    {/* <BookDescription /> */}
-    {/* <Footer /> */}
+    <PropCheck age={29} />
+    <BookDescription />
+    <Footer />
     <HOC adultAge="19" message="Siemanko" />
     <Refs />
   </React.StrictMode>
