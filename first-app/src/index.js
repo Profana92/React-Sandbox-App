@@ -9,10 +9,17 @@ import reportWebVitals from "./reportWebVitals";
 import Book from "./pages/Book";
 // import PropCheck from "./components/propcheck/PropCheck";
 import Counter from "./components/counter/Counter";
+import HOC from "./components/user/User";
+import Refs from "./components/refs/Refs";
+import First from "./components/childrenproperty/First";
+import Second from "./components/childrenproperty/Second";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <First>
+      <Second />
+    </First>
     {/* <App /> */}
     {/* <Header /> */}
     <Book />
@@ -20,6 +27,8 @@ root.render(
     {/* <PropCheck age={29} /> */}
     {/* <BookDescription /> */}
     {/* <Footer /> */}
+    <HOC adultAge="19" message="Siemanko" />
+    <Refs />
   </React.StrictMode>
 );
 

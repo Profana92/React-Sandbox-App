@@ -7,6 +7,13 @@ function BookDescription(props) {
       <h1>{props.book.title}</h1>
       <h2>{props.book.author}</h2>
       <h4>{props.book.pages}</h4>
+      <button
+        onClick={() => {
+          props.deleteBook(props.book.id);
+        }}
+      >
+        Usuń ksiązkę
+      </button>
     </div>
   );
 }
